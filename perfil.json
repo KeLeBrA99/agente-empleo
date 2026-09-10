@@ -1,0 +1,130 @@
+{
+  "version": 1,
+  "identificacion": {
+    "nombre": "Jose Armando Salamanca Amorocho",
+    "ciudad": "Bogotá, Colombia",
+    "email": "T4hkelebra1@gmail.com",
+    "celular": "310 203 4907",
+    "github": "https://github.com/KeLeBrA99",
+    "linkedin": null
+  },
+
+  "situacion_actual": {
+    "titulo_que_busca": "Desarrollador Junior / Backend Junior / Desarrollador Full Stack Junior",
+    "empleado_actualmente": true,
+    "rol_actual_no_tecnico": "Auxiliar de bodega",
+    "disponibilidad": "inmediata",
+    "estudia": true
+  },
+
+  "formacion": [
+    {
+      "titulo": "Ingeniería de Software",
+      "institucion": "Politécnico Grancolombiano",
+      "modalidad": "virtual",
+      "estado": "en curso",
+      "semestre": "7 de 8",
+      "graduacion_estimada": "resta un semestre"
+    },
+    {
+      "titulo": "Tecnólogo en Análisis y Desarrollo de Software",
+      "institucion": "SENA",
+      "estado": "graduado",
+      "fecha_grado": "2025-11-20"
+    }
+  ],
+
+  "experiencia_tecnica_formal": [
+    {
+      "cargo": "Practicante de Planeación de TI",
+      "empresa": "Previsora Seguros S.A.",
+      "sector": "seguros",
+      "inicio": "2024-08-20",
+      "fin": "2025-02-20",
+      "meses": 6,
+      "tipo": "práctica profesional",
+      "tecnologias": ["MySQL", "Power BI", "Python", "SharePoint"],
+      "logros": [
+        "Desarrollé el Tablero de Cumplimiento Normativo 2025 en Power BI sobre una matriz legal de aproximadamente 1.200 normas, con cuatro vistas (menú, resumen general, detalle y ficha técnica por norma) y filtrado cruzado por macroproceso y proceso.",
+        "Diseñé la ficha técnica por norma que consolida ente emisor, impacto, área/vicepresidencia, temática, objeto y requisito aplicable en una sola vista consultable.",
+        "Reemplacé la consulta manual sobre archivos de Excel por un tablero navegable: antes la búsqueda de una norma implicaba recorrer la hoja a mano; después se resuelve filtrando por macroproceso y proceso."
+      ]
+    }
+  ],
+
+  "experiencia_no_tecnica": [
+    {
+      "cargo": "Auxiliar de bodega",
+      "empresa": "Lo Básico SAS",
+      "inicio": "2025-10",
+      "fin": null,
+      "nota": "Empleo actual. No cuenta como experiencia en desarrollo, pero demuestra continuidad laboral."
+    }
+  ],
+
+  "proyectos": [
+    {
+      "nombre": "AUSENTRACK",
+      "resumen": "Plataforma de gestión de talento humano con 10 módulos interrelacionados: colaboradores, incapacidades, procesos disciplinarios, reclutamiento (pipeline kanban), contratos con renovaciones y vencimientos, evaluaciones de desempeño, capacitaciones, puntos de venta y vacaciones.",
+      "stack": ["Django REST Framework", "React 18", "MySQL"],
+      "caracteristicas_tecnicas": [
+        "Permisos por rol (ADMIN / TALENTO_HUMANO / NOMINA)",
+        "Auditoría de cambios",
+        "Importación y exportación en Excel",
+        "Modelo relacional con llaves foráneas entre los 10 módulos"
+      ],
+      "contexto": "Proyecto de grado del Politécnico Grancolombiano. Construido para Poke, empresa con ~27 puntos de venta.",
+      "estado": "desarrollado, pendiente de despliegue",
+      "repo": "https://github.com/KeLeBrA99/AUSENTRACK"
+    },
+    {
+      "nombre": "ServiciosBogotá",
+      "resumen": "Directorio de servicios locales para Bogotá con modelo de suscripción mensual para negocios.",
+      "stack": ["FastAPI", "React", "Vite", "MySQL"],
+      "caracteristicas_tecnicas": [
+        "Registro y autenticación de usuarios funcionando de extremo a extremo",
+        "Backend desplegado en Railway, frontend en Vercel"
+      ],
+      "estado": "desplegado en producción",
+      "url": "https://serviciosbogota.vercel.app"
+    },
+    {
+      "nombre": "Agente de búsqueda de empleo",
+      "resumen": "Sistema que recolecta vacantes de portales colombianos, las evalúa contra un perfil usando un LLM y genera documentos personalizados por vacante.",
+      "stack": ["FastAPI", "PostgreSQL", "Docker", "API de Anthropic", "APScheduler"],
+      "estado": "en construcción"
+    }
+  ],
+
+  "habilidades": {
+    "dominio_solido": ["Python", "Django REST Framework", "FastAPI", "MySQL", "React", "Git"],
+    "dominio_intermedio": ["PostgreSQL", "Node.js", "Docker", "Power BI"],
+    "conocimiento_basico": ["Railway", "Vercel", "SharePoint"],
+    "sin_experiencia": ["Java", "Spring", ".NET", "PHP", "Angular", "Kubernetes", "AWS", "Azure"]
+  },
+
+  "idiomas": [
+    { "idioma": "Español", "nivel": "nativo" },
+    { "idioma": "Inglés", "nivel": "B1", "nota": "Lee documentación técnica sin problema. Conversación limitada. Sin certificación." }
+  ],
+
+  "restricciones": {
+    "salario_minimo_aceptable_cop": 2500000,
+    "salario_deseado_cop": "POR DEFINIR",
+    "modalidad_preferida": "indiferente",
+    "modalidad_aceptable": ["remoto", "híbrido", "presencial en Bogotá"],
+    "reubicacion": false,
+    "disponibilidad_horaria": "tiempo completo",
+    "no_me_interesa": [
+      "vacantes de soporte técnico o mesa de ayuda",
+      "esquemas de comisión pura o multinivel",
+      "vacantes sin empresa identificada"
+    ]
+  },
+
+  "notas_para_el_evaluador": [
+    "La experiencia formal en desarrollo son 6 meses de práctica profesional. Cualquier vacante que exija 2 o más años como requisito excluyente es un descarte.",
+    "El stack fuerte es Python (Django/FastAPI) con React. Vacantes centradas en Java, .NET o PHP no aplican.",
+    "Los proyectos propios son extensos y uno está desplegado en producción; son el argumento principal frente a la falta de años de experiencia."
+  ]
+}

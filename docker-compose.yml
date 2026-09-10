@@ -1,0 +1,33 @@
+services:
+  db:
+    image: postgres:16-alpine
+    container_name: agente_db
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: agente_empleo
+      POSTGRES_USER: agente
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+    ports:
+      - "5433:5432"          # 5433 afuera para no chocar con un Postgres local
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      # El schema.sql se ejecuta solo la primera vez que se crea el volumen
+      - ./schema.sql:/docker-entrypoint-initdb.d/01_schema.sql:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U agente -d agente_empleo"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  adminer:
+    image: adminer:latest
+    container_name: agente_adminer
+    restart: unless-stopped
+    ports:
+      - "8081:8080"          # http://localhost:8081 para ver las tablas
+    depends_on:
+      db:
+        condition: service_healthy
+
+volumes:
+  pgdata:
