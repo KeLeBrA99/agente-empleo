@@ -9,6 +9,8 @@
     "linkedin": null
   },
 
+  "resumen_profesional": "Tecnólogo en desarrollo de software con seis meses de experiencia formal en el área de TI de una aseguradora y dos plataformas web propias, una de ellas en producción. Trabajo principalmente con Python (Django REST, FastAPI), React y bases de datos relacionales.",
+
   "situacion_actual": {
     "titulo_que_busca": "Desarrollador Junior / Backend Junior / Desarrollador Full Stack Junior",
     "empleado_actualmente": true,
